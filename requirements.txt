@@ -3,10 +3,9 @@ fuzzywuzzy==0.18.0
 Levenshtein==0.27.1
 loguru==0.7.3
 MaaAgentBinary==1.0.1
-MaaFw==4.0.0
+MaaFw
 numpy==2.2.3
 pillow==11.1.0
 python-Levenshtein==0.27.1
 RapidFuzz==3.12.2
 StrEnum==0.4.15
-win32_setctime==1.2.0

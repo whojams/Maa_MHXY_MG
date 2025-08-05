@@ -1,5 +1,13 @@
 {
     "fuli_qiandao": {
+        "next": [
+            "fuli_qiandao-ocr"
+        ],
+        "interrupt": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "fuli_qiandao-ocr": {
         "recognition": "OCR",
         "expected": [
             "福利"

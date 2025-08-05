@@ -291,7 +291,10 @@
     },
     "baotu_wancheng": {
         "recognition": "TemplateMatch",
-        "template": "baotu/hd_baotu_wancheng.png",
+        "template": [
+            "baotu/hd_baotu_wancheng.png",
+            "baotu/hd_baotu_wancheng2.png"
+        ],
         "roi": [
             312,
             82,
