@@ -1,0 +1,36 @@
+{
+    "start": {
+        "next": [
+            "启动游戏"
+        ]
+    },
+    "启动游戏": {
+        "action": "StartApp",
+        "package": "com.netease.myq",
+        "post_delay": 60000,
+        "next": [
+            "点击登录游戏"
+        ],
+        "interrupt": [
+            "登录等待10秒"
+        ]
+    },
+    "点击登录游戏": {
+        "recognition": "OCR",
+        "expected": "登录游戏",
+        "roi": [
+            504,
+            490,
+            268,
+            76
+        ],
+        "action": "Click",
+        "post_delay": 15000,
+        "next": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "登录等待10秒": {
+        "pre_delay": 10000
+    }
+}
