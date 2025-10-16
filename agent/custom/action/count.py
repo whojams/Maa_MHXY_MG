@@ -160,5 +160,5 @@ class countZG(CustomAction):
         # 达到目标次数时，执行下一任务节点
         logger.info(f"计数已达标，执行下一任务: {next_task}")
         context.run_task(next_task)
-
+        
         return CustomAction.RunResult(success=True)

@@ -207,3 +207,84 @@ class sjqy_tiku(CustomRecognition):
             # logger.info(reco_detail)
             # return CustomRecognition.AnalyzeResult(box=reco_detail.box,detail="")
 
+@AgentServer.custom_recognition("sjqy_tiku_V2")
+class sjqy_tiku_V2(CustomRecognition):
+
+    def analyze(
+         self,
+         context: Context,
+         argv: CustomRecognition.AnalyzeArg,
+     ) -> CustomRecognition.AnalyzeResult:
+        logger.info("进入三界奇缘答题agent_V2")
+
+        i = 0
+        # 未找到答案次数
+        NotAnswerCount = 0
+        while i < 30:
+            i = i+1
+            logger.info(f"第{i}次识别三界奇缘题目")
+            #识别三界奇缘题目
+            image1 = context.tasker.controller.post_screencap().wait().get()
+            reco_detail = context.run_recognition(
+                "三界奇缘题目",
+                image1,
+                
+                pipeline_override={"三界奇缘题目": {"roi" : [447,40,673,94],
+                                                    "expected":[""],
+                                                    "recognition": "OCR"
+                                                    }
+                                    }
+                )
+            #识别题目返回值
+            # logger.info(reco_detail)
+            # 没有识别到题目
+            if not reco_detail or not reco_detail.all_results:
+                # logger.info("没有识别到题目")
+                logger.info(f"未在题库中搜索到答案次数:{NotAnswerCount}，请反馈开发者填充题库。")
+                return CustomRecognition.AnalyzeResult(box=(0,0,0,0),detail="未识别到题目")
+            #整合题目
+            ext=''
+            for item in reco_detail.all_results:
+                if item.text!='':
+                    ext+=item.text
+            pattern = r'第\d+题：|[（(]\d+/\d+[）)]'
+            def clean_string(s):
+                return re.sub(pattern, '', s).strip()
+            text = clean_string(ext)
+            # 获取答案list[]
+            results_value, confidence ,match_type = SearchQuestions(text)
+            # 如果可信度为零，点击第一个答案
+            if confidence == 0:
+                # logger.info(f"题库中未找到答案，问题为:{text}.请反馈开发者填充题库")
+                NotAnswerCount = NotAnswerCount + 1
+                time.sleep(2)
+                context.tasker.controller.post_click(500, 344).wait()
+                time.sleep(1)
+                continue
+        
+            # 识别答案位置
+            new_context = context.clone()
+            image2 = new_context.tasker.controller.post_screencap().wait().get()
+            new_reco_detail = new_context.run_recognition(
+                            "三界奇缘答案位置",
+                            image2,
+                            pipeline_override={"三界奇缘答案位置": {"roi" : [439,218,678,212],
+                                                                "expected":results_value,
+                                                                "recognition": "OCR"
+                                                                }
+                                                }
+                            )
+            # logger.info("new_reco_detail为：{new_reco_detail}")
+            # logger.info(new_reco_detail.box)
+            # 点击答案
+            if new_reco_detail:
+                box = new_reco_detail.box  # 假设box为(x, y, w, h)
+                center_x = box[0] + box[2] // 2
+                center_y = box[1] + box[3] // 2 
+                time.sleep(2)
+                click_job = new_context.tasker.controller.post_click(center_x, center_y)
+                click_job.wait()  # 等待点击操作完成
+                time.sleep(2)
+
+        logger.info(f"未在题库中搜索到答案次数:{NotAnswerCount}，请反馈开发者填充题库。")
+        return CustomRecognition.AnalyzeResult(box=(0,0,0,0),detail="答题结束")

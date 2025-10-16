@@ -148,7 +148,7 @@ def SearchQuestions(query):
         print("题库加载失败或为空")
         return
     
-    print(f"题库加载成功，共有 {len(question_bank)} 个问题")
+    # print(f"题库加载成功，共有 {len(question_bank)} 个问题")
     # print("输入 'q' 或 'exit' 退出程序")
     
     for i in range(1):

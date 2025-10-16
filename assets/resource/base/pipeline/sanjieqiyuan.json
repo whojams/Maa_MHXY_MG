@@ -219,6 +219,6 @@
     },
     "活动-三界奇缘-开始答题_agent": {
         "recognition": "Custom",
-        "custom_recognition": "sjqy_tiku"
+        "custom_recognition": "sjqy_tiku_V2"
     }
 }
