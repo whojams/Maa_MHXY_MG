@@ -1,6 +1,8 @@
 {
     "jiuliyanwu": {
-        "next": [],
+        "next": [
+            "主界面-九黎"
+        ],
         "interrupt": [
             "panduan_zhujiemian"
         ]
