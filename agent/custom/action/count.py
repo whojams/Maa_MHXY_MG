@@ -42,7 +42,7 @@ class count(CustomAction):
         #当前次数小于目标次数时，增加计数并执行的任务
         while count < target_count:
             count = argv_dict.get("count", 0)
-            logger.info(f"当前计数: {count}, 目标计数: {target_count}")
+            # logger.info(f"当前计数: {count}, 目标计数: {target_count}")
             # 计数未达标时：递增计数并执行备用节点
             new_count = count + 1
             argv_dict["count"] = new_count
