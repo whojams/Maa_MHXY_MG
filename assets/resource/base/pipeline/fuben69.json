@@ -27,22 +27,6 @@
             "打开大地图_69副本"
         ]
     },
-    "识别位置-长安城-副本": {
-        "recognition": "OCR",
-        "expected": [
-            "长安城"
-        ],
-        "roi": [
-            108,
-            22,
-            117,
-            31
-        ],
-        "post_delay": 3000,
-        "next": [
-            "打开组队-副本"
-        ]
-    },
     "打开大地图_69副本": {
         "pre_delay": 500,
         "action": "ClickKey",
@@ -86,225 +70,21 @@
         "action": "Click",
         "post_delay": 1000
     },
-    "打开组队-副本": {
-        "pre_wait_freezes": 100,
-        "action": "ClickKey",
-        "key": [
-            57,
-            48
+    "识别位置-长安城-副本": {
+        "recognition": "OCR",
+        "expected": [
+            "长安城"
+        ],
+        "roi": [
+            108,
+            22,
+            117,
+            31
         ],
         "post_delay": 3000,
         "next": [
-            "识别到队伍已满员"
-        ],
-        "interrupt": [
-            "打开组队-副本-判断",
-            "点击创建队伍",
-            "识别到队伍已创建-未满员"
-        ]
-    },
-    "识别到队伍已满员": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": [
-            "助战"
-        ],
-        "roi": [
-            913,
-            149,
-            189,
-            61
-        ],
-        "next": [
-            "关闭组队页面"
-        ]
-    },
-    "关闭组队页面": {
-        "pre_delay": 500,
-        "action": "ClickKey",
-        "key": [
-            57,
-            48
-        ],
-        "post_delay": 1000,
-        "next": [
             "打开小地图_百晓仙子"
         ]
-    },
-    "识别到队伍已创建-未满员": {
-        "recognition": "TemplateMatch",
-        "template": "fuben/duiwu.png",
-        "roi": [
-            827,
-            89,
-            52,
-            50
-        ],
-        "next": [
-            "识别到队伍已创建-未满员-开始喊话"
-        ]
-    },
-    "识别到队伍已创建-未满员-开始喊话": {
-        "recognition": "OCR",
-        "expected": [
-            "助战"
-        ],
-        "roi": [
-            331,
-            149,
-            777,
-            65
-        ],
-        "next": [
-            "点击一键喊话"
-        ]
-    },
-    "打开组队-副本-判断": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "duiwu/duiwu-jiemian.png",
-        "roi": [
-            361,
-            2,
-            532,
-            67
-        ],
-        "pre_delay": 2000,
-        "action": "ClickKey",
-        "key": [
-            57,
-            48
-        ],
-        "post_delay": 200
-    },
-    "点击创建队伍": {
-        "recognition": "OCR",
-        "expected": [
-            "创建队伍"
-        ],
-        "roi": [
-            134,
-            622,
-            201,
-            71
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "识别到队伍已创建-开始建立目标"
-        ]
-    },
-    "识别到队伍已创建-开始建立目标": {
-        "recognition": "TemplateMatch",
-        "template": "fuben/duiwu.png",
-        "roi": [
-            827,
-            89,
-            52,
-            50
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "建立69侠士目标-点击日常任务"
-        ]
-    },
-    "建立69侠士目标-点击日常任务": {
-        "recognition": "OCR",
-        "expected": [
-            "日常任务"
-        ],
-        "roi": [
-            249,
-            112,
-            276,
-            490
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "建立69侠士目标-点击副本任务"
-        ]
-    },
-    "建立69侠士目标-点击副本任务": {
-        "recognition": "OCR",
-        "expected": [
-            "副本任务"
-        ],
-        "roi": [
-            249,
-            112,
-            276,
-            490
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "建立69侠士目标-点击69侠士"
-        ]
-    },
-    "建立69侠士目标-点击69侠士": {
-        "recognition": "OCR",
-        "expected": [
-            "侠士"
-        ],
-        "roi": [
-            523,
-            126,
-            212,
-            441
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "建立69侠士目标-取消自动匹配"
-        ]
-    },
-    "建立69侠士目标-取消自动匹配": {
-        "recognition": "TemplateMatch",
-        "template": "fuben/zidongpipei.png",
-        "roi": [
-            241,
-            622,
-            64,
-            53
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "建立69侠士目标-点击侠士确定"
-        ]
-    },
-    "建立69侠士目标-点击侠士确定": {
-        "recognition": "OCR",
-        "expected": [
-            "确定"
-        ],
-        "roi": [
-            534,
-            608,
-            203,
-            87
-        ],
-        "action": "Click",
-        "post_delay": 200,
-        "next": [
-            "点击一键喊话"
-        ]
-    },
-    "点击一键喊话": {
-        "recognition": "OCR",
-        "roi": [
-            914,
-            616,
-            193,
-            75
-        ],
-        "expected": [
-            "一键喊话"
-        ],
-        "action": "Click",
-        "post_delay": 25000
     },
     "打开小地图_百晓仙子": {
         "pre_delay": 1000,
@@ -401,6 +181,23 @@
         "action": "Click",
         "post_delay": 200,
         "next": [
+            "进入50级侠士副本-成功"
+        ],
+        "interrupt": [
+            "115进入侠士副本-等待队员同意"
+        ]
+    },
+    "进入50级侠士副本-成功": {
+        "recognition": "OCR",
+        "expected": "因缘绘",
+        "roi": [
+            502,
+            53,
+            94,
+            42
+        ],
+        "pre_delay": 1000,
+        "next": [
             "50侠士-副本完成-退出"
         ],
         "interrupt": [
@@ -443,7 +240,6 @@
         ]
     },
     "点击副本-跳过剧情动画": {
-        "pre_delay": 1000,
         "recognition": "OCR",
         "expected": [
             "跳过剧情动画"
@@ -454,12 +250,12 @@
             240,
             95
         ],
+        "pre_delay": 1000,
         "action": "Click",
         "post_delay": 1000,
         "post_wait_freezes": 10
     },
     "点击副本-开始战斗": {
-        "pre_delay": 1000,
         "recognition": "TemplateMatch",
         "template": "fuben/fubenzhandou.png",
         "roi": [
@@ -468,6 +264,7 @@
             41,
             45
         ],
+        "pre_delay": 1000,
         "action": "Click",
         "post_delay": 3000,
         "next": [
@@ -510,7 +307,7 @@
         ],
         "pre_delay": 500,
         "action": "Click",
-        "post_delay": 500
+        "post_delay": 1000
     },
     "打开小地图_百晓仙子-50普通-1": {
         "recognition": "OCR",
