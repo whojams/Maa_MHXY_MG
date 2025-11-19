@@ -7,7 +7,8 @@
     "师门任务开始": {
         "pre_delay": 200,
         "next": [
-            "shimen_renwu2_dianji"
+            "shimen_renwu2_dianji",
+            "shimen_renwu2_dianji2"
         ],
         "interrupt": [
             "展开-首页任务栏",
@@ -40,14 +41,14 @@
         "pre_delay": 500,
         "recognition": "OCR",
         "expected": [
-            "师门"
+            "^师门-.+"
         ],
         "threshold": 0.9,
         "roi": [
-            1036,
-            163,
-            65,
-            104
+            1030,
+            175,
+            248,
+            329
         ],
         "action": "Click",
         "next": [
@@ -55,6 +56,8 @@
             "师门完成确定-文字识别"
         ],
         "interrupt": [
+            "shimenwancheng-九转天阶遮挡",
+            "师门完成-九幽遮挡",
             "issub_sleep2"
         ]
     },
