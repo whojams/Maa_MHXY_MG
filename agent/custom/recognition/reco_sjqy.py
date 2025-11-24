@@ -299,9 +299,9 @@ class sjqy_tiku_V2(CustomRecognition):
                 continue
         
             # 识别答案位置
-            new_context = context.clone()
-            image2 = new_context.tasker.controller.post_screencap().wait().get()
-            new_reco_detail = new_context.run_recognition(
+            # new_context = context.clone()
+            image2 = context.tasker.controller.post_screencap().wait().get()
+            new_reco_detail = context.run_recognition(
                             "三界奇缘答案位置",
                             image2,
                             pipeline_override={"三界奇缘答案位置": {"roi" : [439,218,678,212],
@@ -318,7 +318,7 @@ class sjqy_tiku_V2(CustomRecognition):
                 center_x = box[0] + box[2] // 2
                 center_y = box[1] + box[3] // 2 
                 time.sleep(2)
-                click_job = new_context.tasker.controller.post_click(center_x, center_y)
+                click_job = context.tasker.controller.post_click(center_x, center_y)
                 click_job.wait()  # 等待点击操作完成
                 time.sleep(2)
             else:#没找到答案，点击的一个
