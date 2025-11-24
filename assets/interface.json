@@ -50,7 +50,7 @@
             "doc": "默认创建副本任务,默认任务描述520"
         },
         {
-            "name": "副本320(69)(已完成)",
+            "name": "副本320(69)",
             "entry": "fuben69",
             "option": [
                 "320或3本"
@@ -58,7 +58,7 @@
             "doc": "可以配合组队任务进行联动使用。"
         },
         {
-            "name": "副本520(89/115)(已完成)",
+            "name": "副本520(89/115)",
             "entry": "fuben115",
             "option": [
                 "全自动/手动接取双侠士任务选项"
@@ -66,32 +66,32 @@
             "doc": "全自动：配合组队任务进行联动使用。手动：需要手动接取双侠士后，返回长安城，在开始运行任务。只打普通三本"
         },
         {
-            "name": "退出队伍(已完成)",
+            "name": "退出队伍",
             "entry": "tuichuduiwu"
         },
         {
-            "name": "福利签到(已完成)",
+            "name": "福利签到",
             "entry": "fuli_qiandao"
         },
         {
-            "name": "帮派签到(已完成)",
+            "name": "帮派签到",
             "entry": "bangpai_qiandao"
         },
         {
-            "name": "整理背包（已完成）",
+            "name": "整理背包",
             "entry": "zhengli_baibao"
         },
         {
-            "name": "师门任务(已完成)",
+            "name": "师门任务",
             "entry": "shimen_renwu",
             "doc": "请勾选“自动选择每日任务”和“自动完成任务”两个选项，师门任务暂时只做了自动。"
         },
         {
-            "name": "秘境降妖（已完成）",
+            "name": "秘境降妖",
             "entry": "mijing_renwu"
         },
         {
-            "name": "宝图任务(已完成)",
+            "name": "宝图任务",
             "entry": "baotu_renwu",
             "option": [
                 "选择宝图时间"
@@ -99,15 +99,15 @@
             "doc": "请选择宝图任务打宝图时间，程序将等待时间结束后检查任务是否完成"
         },
         {
-            "name": "挖宝图(已完成)",
+            "name": "挖宝图",
             "entry": "wabaotu_qingli"
         },
         {
-            "name": "出售商会(已完成)",
+            "name": "出售商会",
             "entry": "chushoushanghui"
         },
         {
-            "name": "运镖普通(已完成)",
+            "name": "运镖普通",
             "entry": "yunbiao_renwu2",
             "option": [
                 "是否检测活力到50"
@@ -115,14 +115,14 @@
             "doc": "检查活力是否到50，建议优先选择不检测，请自己排序任务，把运镖放在后边"
         },
         {
-            "name": "三界奇缘(已完成)",
+            "name": "三界奇缘",
             "entry": "sanjieqiyuan",
             "option": [
                 "是否选择题库"
             ]
         },
         {
-            "name": "科举乡试(已完成)",
+            "name": "科举乡试",
             "entry": "kejuxiangshi",
             "option": [
                 "是否使用Ai进行答题"
@@ -130,10 +130,10 @@
             "advanced": [
                 "Deepseek_apikey"
             ],
-            "doc": "科举乡试使用ai答题，请在高级中填写Key,暂时只支持deepseek。默认不使用AI"
+            "doc": "1.默认不使用AI，全选A,2.科举乡试使用AI答题，请在高级中填写Key,暂时只支持deepseek。"
         },
         {
-            "name": "活跃领取(已完成)",
+            "name": "活跃领取",
             "entry": "huoyue_lingqu"
         },
         {
@@ -155,7 +155,7 @@
             "doc": "默认创建副本任务，默认任务描述520"
         },
         {
-            "name": "捉鬼任务-无限/手动选择执行几轮(已完成)",
+            "name": "捉鬼任务-无限/手动选择执行几轮",
             "entry": "zhuoguirenwu",
             "option": [
                 "（开启/关闭）人员检测-（是否）进入轮次选择"
