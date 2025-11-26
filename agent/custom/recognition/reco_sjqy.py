@@ -269,7 +269,9 @@ class sjqy_tiku_V2(CustomRecognition):
                                     }
                 )
             #识别题目返回值
-            # logger.info(reco_detail)
+            # logger.info("reco_detail为：{reco_detail}")
+            
+            # logger.info(reco_detail.box)
             # 没有识别到题目
             if not reco_detail or not reco_detail.all_results:
                 # logger.info("没有识别到题目")
@@ -300,10 +302,10 @@ class sjqy_tiku_V2(CustomRecognition):
         
             # 识别答案位置
             # new_context = context.clone()
-            image2 = context.tasker.controller.post_screencap().wait().get()
+            # image2 = context.tasker.controller.post_screencap().wait().get()
             new_reco_detail = context.run_recognition(
                             "三界奇缘答案位置",
-                            image2,
+                            image1,
                             pipeline_override={"三界奇缘答案位置": {"roi" : [439,218,678,212],
                                                                 "expected":results_value,
                                                                 "recognition": "OCR"
