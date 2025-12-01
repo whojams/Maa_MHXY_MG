@@ -26,10 +26,9 @@ class OCRNum(CustomRecognition):
                               "recognition": "OCR"
                             }
                 }
-
             )
         logger.info(f"识别结果: {recoNum}")
-        if not recoNum or not recoNum.all_results:
+        if not recoNum or not recoNum.hit:
                 logger.info("没有识别到活跃度")
 
                 return CustomRecognition.AnalyzeResult(box=(0,0,0,0),detail="没有识别到活跃度")
@@ -78,7 +77,7 @@ class OCRVitality(CustomRecognition):
                 }
 
             )
-        if not recoNum or not recoNum.all_results:
+        if not recoNum or not recoNum.hit:
             logger.info("没有识别到活力")
             return CustomRecognition.AnalyzeResult(box=(0,0,0,0),detail="没有识别到活力")
         for res in recoNum.all_results:

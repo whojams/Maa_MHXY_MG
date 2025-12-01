@@ -450,3 +450,5 @@ tools/ImageCropper/**/*.png
 config
 debug
 
+# 答题日志文件
+agent/custom/recognition/search_log.txt

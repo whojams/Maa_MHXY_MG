@@ -60,7 +60,7 @@ class AIAnswer(CustomRecognition):
                                                 }
                             )
             # 没有识别到科举乡试题目
-            if not reco_detail or not reco_detail.all_results:
+            if not reco_detail or not reco_detail.hit:
                 # logger.info("没有识别到科举乡试题目")
                 # logger.info(f"未在题库中搜索到答案次数:{NotAnswerCount}，请反馈开发者填充题库。")
                 return CustomRecognition.AnalyzeResult(box=(0,0,0,0),detail="答题结束")
