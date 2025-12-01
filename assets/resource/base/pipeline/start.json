@@ -9,10 +9,8 @@
         "package": "com.netease.myq",
         "post_delay": 60000,
         "next": [
-            "点击登录游戏"
-        ],
-        "interrupt": [
-            "登录等待10秒"
+            "点击登录游戏",
+            "[JumpBack]登录等待10秒"
         ]
     },
     "点击登录游戏": {

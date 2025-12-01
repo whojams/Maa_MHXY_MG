@@ -1,10 +1,8 @@
 {
     "chushoushanghui": {
         "next": [
-            "打开摆摊"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "打开摆摊",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "打开摆摊": {
@@ -26,10 +24,8 @@
             29
         ],
         "next": [
-            "点击商会"
-        ],
-        "interrupt": [
-            "打开摆摊-判断"
+            "点击商会",
+            "[JumpBack]打开摆摊-判断"
         ]
     },
     "打开摆摊-判断": {
@@ -85,10 +81,8 @@
         "pre_delay": 200,
         "action": "Click",
         "next": [
-            "出售完成"
-        ],
-        "interrupt": [
-            "开始出售"
+            "出售完成",
+            "[JumpBack]开始出售"
         ]
     },
     "出售完成": {

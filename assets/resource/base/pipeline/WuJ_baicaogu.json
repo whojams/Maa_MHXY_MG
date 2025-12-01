@@ -1,10 +1,8 @@
 {
     "baicaogu": {
         "next": [
-            "主界面-百草谷"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "主界面-百草谷",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "主界面-百草谷": {
@@ -29,10 +27,8 @@
         "post_delay": 2000,
         "post_wait_freezes": 500,
         "next": [
-            "活动-百草谷"
-        ],
-        "interrupt": [
-            "活动-界面-打开失败"
+            "活动-百草谷",
+            "[JumpBack]活动-界面-打开失败"
         ]
     },
     "活动-百草谷": {
@@ -103,10 +99,8 @@
         "next": [
             "活动-百草谷-开始",
             "活动-百草谷-已完成",
-            "活动-百草谷-未开始"
-        ],
-        "interrupt": [
-            "baotu_huodong_down"
+            "活动-百草谷-未开始",
+            "[JumpBack]baotu_huodong_down"
         ]
     },
     "活动-百草谷-未开始": {
@@ -200,11 +194,10 @@
         "pre_delay": 1000,
         "action": "Click",
         "post_delay": 1000,
-        "next": [],
-        "interrupt": [
-            "百草谷-点击浇水",
-            "百草谷-点击除虫",
-            "百草谷-点击降雨"
+        "next": [
+            "[JumpBack]百草谷-点击浇水",
+            "[JumpBack]百草谷-点击除虫",
+            "[JumpBack]百草谷-点击降雨"
         ]
     },
     "百草谷-点击降雨": {},

@@ -1,10 +1,8 @@
 {
     "auto_switch": {
         "next": [
-            "进入切号"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "进入切号",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "进入切号": {
@@ -136,11 +134,9 @@
         "pre_delay": 500,
         "action": "Click",
         "next": [
-            "输入账号密码完成"
-        ],
-        "interrupt": [
-            "输入账号",
-            "输入密码"
+            "输入账号密码完成",
+            "[JumpBack]输入账号",
+            "[JumpBack]输入密码"
         ]
     },
     "输入账号": {

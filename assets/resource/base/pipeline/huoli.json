@@ -1,10 +1,8 @@
 {
     "huoli": {
         "next": [
-            "打开人物界面-过渡"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "打开人物界面-过渡",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "打开人物界面-过渡": {
@@ -27,10 +25,8 @@
         ],
         "post_delay": 2000,
         "next": [
-            "打开人物界面-成功"
-        ],
-        "interrupt": [
-            "打开人物界面-失败"
+            "打开人物界面-成功",
+            "[JumpBack]打开人物界面-失败"
         ]
     },
     "打开人物界面-失败": {

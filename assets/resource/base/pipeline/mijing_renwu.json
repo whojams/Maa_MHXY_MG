@@ -1,10 +1,8 @@
 {
     "mijing_renwu": {
         "next": [
-            "识别位置-东海湾-秘境-过渡"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "识别位置-东海湾-秘境-过渡",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "识别位置-东海湾-秘境-过渡": {
@@ -20,10 +18,8 @@
             57
         ],
         "next": [
-            "识别位置-东海湾-秘境"
-        ],
-        "interrupt": [
-            "dakai_map"
+            "识别位置-东海湾-秘境",
+            "[JumpBack]dakai_map"
         ]
     },
     "识别位置-东海湾-秘境": {
@@ -51,10 +47,8 @@
         ],
         "post_delay": 2000,
         "next": [
-            "chuansong_donghaiwan"
-        ],
-        "interrupt": [
-            "dakai_map_panduan"
+            "chuansong_donghaiwan",
+            "[JumpBack]dakai_map_panduan"
         ]
     },
     "dakai_map_panduan": {
@@ -94,10 +88,8 @@
         ],
         "post_delay": 1500,
         "next": [
-            "click_map_yunleyou"
-        ],
-        "interrupt": [
-            "click_tab_mijing_panduan"
+            "click_map_yunleyou",
+            "[JumpBack]click_tab_mijing_panduan"
         ]
     },
     "click_tab_mijing_panduan": {
@@ -209,24 +201,23 @@
         "post_delay": 200,
         "action": "Click",
         "next": [
-            "mijing_zhandou_queren_issub",
-            "mijing_zhandou",
+            "[JumpBack]mijing_zhandou_queren_issub",
+            "[JumpBack]mijing_zhandou",
             "mijing_tongguan",
             "mijing_shibai",
-            "issub_sleep_mijing"
+            "[JumpBack]issub_sleep_mijing"
         ]
     },
     "kk": {
         "next": [
-            "mijing_zhandou_queren_issub",
-            "mijing_zhandou",
+            "[JumpBack]mijing_zhandou_queren_issub",
+            "[JumpBack]mijing_zhandou",
             "mijing_tongguan",
             "mijing_shibai",
-            "issub_sleep_mijing"
+            "[JumpBack]issub_sleep_mijing"
         ]
     },
     "mijing_zhandou": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "第1关",
@@ -285,7 +276,6 @@
         "action": "Click"
     },
     "mijing_zhandou_queren_issub": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "进入战斗"
@@ -328,7 +318,6 @@
         "key": 111
     },
     "issub_sleep_mijing": {
-        "is_sub": true,
         "pre_delay": 2000,
         "post_wait_freezes": 5000
     }

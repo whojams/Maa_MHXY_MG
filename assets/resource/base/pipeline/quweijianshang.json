@@ -1,10 +1,8 @@
 {
     "quweijianshang": {
         "next": [
-            "主界面-趣味鉴赏"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "主界面-趣味鉴赏",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "主界面-趣味鉴赏": {
@@ -29,10 +27,8 @@
         "post_delay": 2000,
         "post_wait_freezes": 500,
         "next": [
-            "活动-趣味鉴赏"
-        ],
-        "interrupt": [
-            "活动-界面-打开失败"
+            "活动-趣味鉴赏",
+            "[JumpBack]活动-界面-打开失败"
         ]
     },
     "活动-趣味鉴赏": {
@@ -102,10 +98,8 @@
         "post_delay": 500,
         "next": [
             "活动-趣味鉴赏-开始",
-            "活动-趣味鉴赏-已完成"
-        ],
-        "interrupt": [
-            "baotu_huodong_down"
+            "活动-趣味鉴赏-已完成",
+            "[JumpBack]baotu_huodong_down"
         ]
     },
     "活动-趣味鉴赏-已完成": {
@@ -173,10 +167,8 @@
         ],
         "post_delay": 2000,
         "next": [
-            "鉴赏第一次"
-        ],
-        "interrupt": [
-            "鉴赏向上滑动"
+            "鉴赏第一次",
+            "[JumpBack]鉴赏向上滑动"
         ]
     },
     "鉴赏第一次": {
@@ -215,10 +207,8 @@
         ],
         "post_delay": 2500,
         "next": [
-            "鉴赏第二次"
-        ],
-        "interrupt": [
-            "鉴赏向上滑动"
+            "鉴赏第二次",
+            "[JumpBack]鉴赏向上滑动"
         ]
     },
     "鉴赏第二次": {
@@ -257,10 +247,8 @@
         ],
         "post_delay": 2500,
         "next": [
-            "鉴赏第三次"
-        ],
-        "interrupt": [
-            "鉴赏向上滑动"
+            "鉴赏第三次",
+            "[JumpBack]鉴赏向上滑动"
         ]
     },
     "鉴赏第三次": {
@@ -299,10 +287,8 @@
         ],
         "post_delay": 2500,
         "next": [
-            "鉴赏第四次"
-        ],
-        "interrupt": [
-            "鉴赏向上滑动"
+            "鉴赏第四次",
+            "[JumpBack]鉴赏向上滑动"
         ]
     },
     "鉴赏第四次": {
@@ -341,10 +327,8 @@
         ],
         "post_delay": 2500,
         "next": [
-            "鉴赏第五次"
-        ],
-        "interrupt": [
-            "鉴赏向上滑动"
+            "鉴赏第五次",
+            "[JumpBack]鉴赏向上滑动"
         ]
     },
     "鉴赏第五次": {

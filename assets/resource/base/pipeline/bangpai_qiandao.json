@@ -22,10 +22,8 @@
         ],
         "post_delay": 1000,
         "next": [
-            "bangpaifuli"
-        ],
-        "interrupt": [
-            "baipai_panduan"
+            "bangpaifuli",
+            "[JumpBack]baipai_panduan"
         ]
     },
     "baipai_panduan": {

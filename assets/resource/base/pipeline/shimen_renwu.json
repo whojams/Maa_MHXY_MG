@@ -8,13 +8,11 @@
         "pre_delay": 200,
         "next": [
             "shimen_renwu2_dianji",
-            "shimen_renwu2_dianji2"
-        ],
-        "interrupt": [
-            "展开-首页任务栏",
-            "任务栏切换为任务",
-            "捉鬼-下滑任务栏",
-            "panduan_zhujiemian"
+            "shimen_renwu2_dianji2",
+            "[JumpBack]展开-首页任务栏",
+            "[JumpBack]任务栏切换为任务",
+            "[JumpBack]捉鬼-下滑任务栏",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "shimen_renwu2_dianji": {
@@ -31,10 +29,8 @@
         ],
         "action": "Click",
         "next": [
-            "师门-点击去完成"
-        ],
-        "interrupt": [
-            "shimen_renwu2_dianji"
+            "师门-点击去完成",
+            "[JumpBack]shimen_renwu2_dianji"
         ]
     },
     "shimen_renwu2_dianji2": {
@@ -53,12 +49,10 @@
         "action": "Click",
         "next": [
             "师门完成确定-图片识别",
-            "师门完成确定-文字识别"
-        ],
-        "interrupt": [
-            "shimenwancheng-九转天阶遮挡",
-            "师门完成-九幽遮挡",
-            "issub_sleep2"
+            "师门完成确定-文字识别",
+            "[JumpBack]shimenwancheng-九转天阶遮挡",
+            "[JumpBack]师门完成-九幽遮挡",
+            "[JumpBack]issub_sleep2"
         ]
     },
     "师门-点击去完成": {
@@ -78,12 +72,10 @@
         "action": "Click",
         "next": [
             "师门完成确定-图片识别",
-            "师门完成确定-文字识别"
-        ],
-        "interrupt": [
-            "shimenwancheng-九转天阶遮挡",
-            "师门完成-九幽遮挡",
-            "issub_sleep2"
+            "师门完成确定-文字识别",
+            "[JumpBack]shimenwancheng-九转天阶遮挡",
+            "[JumpBack]师门完成-九幽遮挡",
+            "[JumpBack]issub_sleep2"
         ]
     },
     "shimenwancheng-九转天阶遮挡": {

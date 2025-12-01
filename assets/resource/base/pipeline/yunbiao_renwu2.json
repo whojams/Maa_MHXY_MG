@@ -1,10 +1,8 @@
 {
     "yunbiao_renwu2": {
         "next": [
-            "主界面-运镖"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "主界面-运镖",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "主界面-运镖": {
@@ -29,10 +27,8 @@
         ],
         "post_wait_freezes": 100,
         "next": [
-            "活动-运镖"
-        ],
-        "interrupt": [
-            "活动-界面-打开失败"
+            "活动-运镖",
+            "[JumpBack]活动-界面-打开失败"
         ]
     },
     "活动-运镖": {
@@ -105,10 +101,8 @@
         ],
         "post_delay": 500,
         "next": [
-            "活动-运镖-开始"
-        ],
-        "interrupt": [
-            "baotu_huodong_down"
+            "活动-运镖-开始",
+            "[JumpBack]baotu_huodong_down"
         ]
     },
     "活动-运镖-开始": {
@@ -174,11 +168,9 @@
         ],
         "action": "Click",
         "next": [
-            "点击押送普通镖银(第二次)"
-        ],
-        "interrupt": [
-            "反转运镖中",
-            "战斗中-等待100秒"
+            "点击押送普通镖银(第二次)",
+            "[JumpBack]反转运镖中",
+            "[JumpBack]战斗中-等待100秒"
         ]
     },
     "反转运镖中": {
@@ -224,11 +216,9 @@
         ],
         "action": "Click",
         "next": [
-            "点击押送普通镖银(第三次)"
-        ],
-        "interrupt": [
-            "反转运镖中",
-            "战斗中-等待100秒"
+            "点击押送普通镖银(第三次)",
+            "[JumpBack]反转运镖中",
+            "[JumpBack]战斗中-等待100秒"
         ]
     },
     "点击押送普通镖银(第三次)": {

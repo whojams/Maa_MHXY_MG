@@ -1,10 +1,8 @@
 {
     "sanjieqiyuan": {
         "next": [
-            "主界面-三界奇缘"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "主界面-三界奇缘",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "主界面-三界奇缘": {
@@ -29,10 +27,8 @@
         ],
         "post_wait_freezes": 100,
         "next": [
-            "活动-三界奇缘"
-        ],
-        "interrupt": [
-            "活动-界面-打开失败"
+            "活动-三界奇缘",
+            "[JumpBack]活动-界面-打开失败"
         ]
     },
     "活动-三界奇缘": {
@@ -111,10 +107,8 @@
         "post_delay": 500,
         "next": [
             "活动-三界奇缘-开始",
-            "活动-三界奇缘-未到开始时间"
-        ],
-        "interrupt": [
-            "baotu_huodong_down"
+            "活动-三界奇缘-未到开始时间",
+            "[JumpBack]baotu_huodong_down"
         ]
     },
     "活动-三界奇缘-未到开始时间": {
@@ -180,11 +174,9 @@
         ],
         "next": [
             "活动-三界奇缘-结束",
-            "主界面"
-        ],
-        "interrupt": [
-            "活动-三界奇缘-开始答题_agent",
-            "panduan_zhujiemian"
+            "主界面",
+            "[JumpBack]活动-三界奇缘-开始答题_agent",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "活动-三界奇缘-结束": {

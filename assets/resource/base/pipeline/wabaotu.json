@@ -2,11 +2,9 @@
     "wabaotu_qingli": {
         "pre_delay": 200,
         "next": [
-            "清理主界面使用-关闭完成"
-        ],
-        "interrupt": [
-            "清理主界面使用-关闭",
-            "panduan_zhujiemian"
+            "清理主界面使用-关闭完成",
+            "[JumpBack]清理主界面使用-关闭",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "清理主界面使用-关闭完成": {
@@ -46,10 +44,8 @@
         ],
         "post_delay": 1000,
         "next": [
-            "wabaotu_dakaibeibao_chenggong"
-        ],
-        "interrupt": [
-            "wabaotu_dakaibeibao_shibai"
+            "wabaotu_dakaibeibao_chenggong",
+            "[JumpBack]wabaotu_dakaibeibao_shibai"
         ]
     },
     "wabaotu_dakaibeibao_chenggong": {
@@ -153,10 +149,8 @@
         "post_delay": 1000,
         "next": [
             "点击藏宝图",
-            "整理完成"
-        ],
-        "interrupt": [
-            "背包向上滑动1"
+            "整理完成",
+            "[JumpBack]背包向上滑动1"
         ]
     },
     "点击藏宝图": {
@@ -186,17 +180,14 @@
         ],
         "action": "Click",
         "next": [
-            "藏宝图-主界面使用"
-        ],
-        "interrupt": [
-            "战斗中-等待100秒"
+            "[JumpBack]藏宝图-主界面使用",
+            "[JumpBack]战斗中-等待100秒"
         ],
         "on_error": [
             "挖宝图完成判断"
         ]
     },
     "藏宝图-主界面使用": {
-        "is_sub": true,
         "recognition": "OCR",
         "expected": [
             "使用"
@@ -219,10 +210,8 @@
         ],
         "post_delay": 1000,
         "next": [
-            "挖宝图完成判断-打开背包成功"
-        ],
-        "interrupt": [
-            "挖宝图完成判断-打开背包失败"
+            "挖宝图完成判断-打开背包成功",
+            "[JumpBack]挖宝图完成判断-打开背包失败"
         ]
     },
     "挖宝图完成判断-打开背包成功": {
@@ -236,10 +225,8 @@
         ],
         "next": [
             "点击藏宝图",
-            "挖宝图完成"
-        ],
-        "interrupt": [
-            "背包向上滑动1"
+            "挖宝图完成",
+            "[JumpBack]背包向上滑动1"
         ]
     },
     "挖宝图完成判断-打开背包失败": {

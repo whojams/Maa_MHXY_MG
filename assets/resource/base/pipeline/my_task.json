@@ -83,12 +83,11 @@
     },
     "panduan_zhujiemian": {
         "next": [
-            "panduan_zhujiemian_ks",
+            "[JumpBack]panduan_zhujiemian_ks",
             "zai_zhujiemian"
         ]
     },
     "panduan_zhujiemian_ks": {
-        "is_sub": true,
         "recognition": "TemplateMatch",
         "template": [
             "zonghe/jiahao.png",
@@ -233,10 +232,8 @@
     },
     "mk": {
         "next": [
-            "fuli_qiandao"
-        ],
-        "interrupt": [
-            "计数器2"
+            "fuli_qiandao",
+            "[JumpBack]计数器2"
         ]
     },
     "测试input": {

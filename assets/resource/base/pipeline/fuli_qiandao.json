@@ -1,10 +1,8 @@
 {
     "fuli_qiandao": {
         "next": [
-            "fuli_qiandao-ocr"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "fuli_qiandao-ocr",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "fuli_qiandao-ocr": {

@@ -3,10 +3,8 @@
         "next": [
             "回到家园-成功",
             "家园-主界面-加号",
-            "家园-主界面-乘号"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "家园-主界面-乘号",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "家园-主界面-加号": {
@@ -200,10 +198,8 @@
             79
         ],
         "next": [
-            "卧室-点击打理"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "卧室-点击打理",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "召唤灵室-使用家具": {
@@ -295,10 +291,8 @@
     "卧室-点击打理-过渡": {
         "pre_delay": 2000,
         "next": [
-            "卧室-点击打理"
-        ],
-        "interrupt": [
-            "panduan_zhujiemian"
+            "卧室-点击打理",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
     "卧室-点击打理": {
