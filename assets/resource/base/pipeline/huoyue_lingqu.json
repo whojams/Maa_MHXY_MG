@@ -1,32 +1,34 @@
 {
     "huoyue_lingqu": {
-        "recognition": "TemplateMatch",
-        "template": [
-            "zonghe/chenghao.png",
-            "zonghe/jiahao.png"
-        ],
-        "roi": [
-            1206,
-            637,
-            66,
-            57
-        ],
         "next": [
-            "活跃奖励领取",
+            "主界面-活跃领取",
             "[JumpBack]panduan_zhujiemian"
         ]
     },
-    "活跃奖励领取": {
-        "pre_wait_freezes": 1,
+    "主界面-活跃领取": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zonghe/jiahao.png",
+            "zonghe/chenghao.png",
+            "zonghe/baoguo.png",
+            "zonghe/baoguo_man.png"
+        ],
+        "roi": [
+            1197,
+            540,
+            78,
+            157
+        ],
+        "post_delay": 500,
         "action": "ClickKey",
         "key": [
             57,
             31
         ],
-        "post_delay": 1000,
+        "post_wait_freezes": 100,
         "next": [
             "活跃奖励领取-打开活动界面成功",
-            "[JumpBack]活跃奖励领取-打开活动界面失败"
+            "[JumpBack]活动-界面-打开失败-点击活动图片"
         ]
     },
     "活跃奖励领取-打开活动界面成功": {
@@ -41,23 +43,6 @@
         "next": [
             "领取活跃奖励5"
         ]
-    },
-    "活跃奖励领取-打开活动界面失败": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "zonghe/huodong_jiemian_panduan.png",
-        "roi": [
-            350,
-            23,
-            600,
-            62
-        ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            31
-        ],
-        "post_delay": 1000
     },
     "领取活跃奖励5": {
         "action": "Click",

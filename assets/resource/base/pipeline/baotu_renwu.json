@@ -199,7 +199,7 @@
         "post_delay": 1000,
         "next": [
             "open_huodong_bt_panduan_chenggong",
-            "[JumpBack]open_huodong_bt_panduan_shibai"
+            "[JumpBack]活动-界面-打开失败-点击活动图片"
         ]
     },
     "open_huodong_bt_panduan_chenggong": {
@@ -265,23 +265,6 @@
             "baotu_wancheng",
             "[JumpBack]baotu_huodong_down"
         ]
-    },
-    "open_huodong_bt_panduan_shibai": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "zonghe/huodong_jiemian_panduan.png",
-        "roi": [
-            350,
-            23,
-            600,
-            62
-        ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            31
-        ],
-        "post_delay": 1000
     },
     "baotu_wancheng": {
         "recognition": "TemplateMatch",
