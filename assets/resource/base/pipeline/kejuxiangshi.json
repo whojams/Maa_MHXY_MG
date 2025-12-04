@@ -215,6 +215,7 @@
         ]
     },
     "AIapikey": {
+        "max_hit": 11,
         "recognition": "Custom",
         "custom_recognition": "AIAnswer",
         "custom_recognition_param": {

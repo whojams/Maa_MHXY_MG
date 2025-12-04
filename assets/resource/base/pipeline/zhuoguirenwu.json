@@ -111,6 +111,31 @@
             "钟馗-捉鬼任务-循环"
         ]
     },
+    "钟馗-捉鬼任务-已领取捉鬼任务": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zhuagui/zhuagui_yilingqurenwu1.png",
+            "zhuagui/zhuagui_yilingqurenwu2.png"
+        ],
+        "roi": [
+            872,
+            94,
+            355,
+            441
+        ],
+        "action": "ClickKey",
+        "key": [
+            111
+        ],
+        "post_delay": 2000,
+        "next": [
+            "[JumpBack]捉鬼-没有辅助提示-点击取消",
+            "[JumpBack]展开-首页任务栏",
+            "[JumpBack]任务栏切换为任务",
+            "点击任务栏-捉鬼任务",
+            "[JumpBack]捉鬼-下滑任务栏"
+        ]
+    },
     "钟馗-捉鬼任务-循环": {
         "recognition": "OCR",
         "expected": [
@@ -125,11 +150,11 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "点击任务栏-捉鬼任务",
+            "[JumpBack]捉鬼-没有辅助提示-点击取消",
             "[JumpBack]展开-首页任务栏",
             "[JumpBack]任务栏切换为任务",
-            "[JumpBack]捉鬼-下滑任务栏",
-            "[JumpBack]捉鬼-没有辅助提示-点击取消"
+            "点击任务栏-捉鬼任务",
+            "[JumpBack]捉鬼-下滑任务栏"
         ]
     },
     "展开-首页任务栏": {
@@ -172,6 +197,7 @@
         "post_delay": 1500
     },
     "捉鬼-下滑任务栏": {
+        "max_hit": 4,
         "post_delay": 1000,
         "action": "MultiSwipe",
         "swipes": [
