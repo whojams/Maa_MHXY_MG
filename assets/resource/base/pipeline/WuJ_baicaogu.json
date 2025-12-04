@@ -105,7 +105,9 @@
     },
     "活动-百草谷-未开始": {
         "recognition": "TemplateMatch",
-        "template": [],
+        "template": [
+            "wujian/bcg/baicaogu_weikaishi.png"
+        ],
         "threshold": 0.9,
         "roi": [
             316,
@@ -176,14 +178,14 @@
     "百草谷-帮派-向下移动": {
         "recognition": "TemplateMatch",
         "template": [
-            "wujian/bcg/baicaoguI_weizhi1.png",
-            "wujian/bcg/baicaoguI_weizhi2.png",
-            "wujian/bcg/baicaoguI_weizhi3.png"
+            "wujian/bcg/baicaogu_weizhi1.png",
+            "wujian/bcg/baicaogu_weizhi2.png",
+            "wujian/bcg/baicaogu_weizhi3.png"
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 6000,
         "next": [
             "百草谷-点击神树"
         ]
@@ -197,10 +199,44 @@
         "next": [
             "[JumpBack]百草谷-点击浇水",
             "[JumpBack]百草谷-点击除虫",
-            "[JumpBack]百草谷-点击降雨"
+            "[JumpBack]百草谷-点击降雨",
+            "[JumpBack]战斗中-等待20秒"
         ]
     },
-    "百草谷-点击降雨": {},
-    "百草谷-点击除虫": {},
-    "百草谷-点击浇水": {}
+    "百草谷-神树消失": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "wujian/bcg/baicaogu_shenshu_xiaoshi.png"
+        ],
+        "next": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "百草谷-点击降雨": {
+        "recognition": "OCR",
+        "expected": [
+            "降雨"
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "百草谷-点击除虫": {
+        "recognition": "OCR",
+        "expected": [
+            "除虫"
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "百草谷-点击浇水": {
+        "recognition": "OCR",
+        "expected": [
+            "浇水"
+        ],
+        "pre_delay": 1000,
+        "action": "Click",
+        "post_delay": 1000
+    }
 }

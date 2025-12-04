@@ -183,9 +183,9 @@
     "九黎-帮派-向下移动": {
         "recognition": "TemplateMatch",
         "template": [
-            "wujian/bcg/baicaoguI_weizhi1.png",
-            "wujian/bcg/baicaoguI_weizhi2.png",
-            "wujian/bcg/baicaoguI_weizhi3.png"
+            "wujian/bcg/baicaogu_weizhi1.png",
+            "wujian/bcg/baicaogu_weizhi2.png",
+            "wujian/bcg/baicaogu_weizhi3.png"
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
