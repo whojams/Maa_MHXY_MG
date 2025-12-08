@@ -117,7 +117,8 @@
     "师门完成-九幽遮挡": {
         "recognition": "TemplateMatch",
         "template": [
-            "zonghe/jiuyoudiyu.png"
+            "zonghe/jiuyoudiyu.png",
+            "zonghe/jiuyoudiyu2.png"
         ],
         "roi": [
             1085,
