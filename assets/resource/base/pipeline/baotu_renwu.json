@@ -186,6 +186,7 @@
     "baotu_renwu_sleep": {
         "pre_delay": 700000,
         "next": [
+            "[JumpBack]师门完成-九幽遮挡",
             "open_huodong_bt"
         ]
     },
