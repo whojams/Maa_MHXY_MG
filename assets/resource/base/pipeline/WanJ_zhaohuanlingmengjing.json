@@ -157,7 +157,9 @@
         "recognition": "TemplateMatch",
         "template": [
             "wanjian/zhl/zhaohuanling_weikaishi1.png",
-            "wanjian/zhl/zhaohuanling_weikaishi2.png"
+            "wanjian/zhl/zhaohuanling_weikaishi2.png",
+            "wanjian/zhl/zhaohuanling_weikaishi3.png",
+            "wanjian/zhl/zhaohuanling_weikaishi4.png"
         ],
         "roi": [
             313,
@@ -183,7 +185,7 @@
             840,
             447
         ],
-        "threshold": 0.9,
+        "threshold": 0.8,
         "next": [
             "点击召唤灵梦境参加"
         ]
