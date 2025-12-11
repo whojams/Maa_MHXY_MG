@@ -226,7 +226,7 @@
     "mijing_zhandou": {
         "recognition": "OCR",
         "expected": [
-            "第\\d+关"
+            "第\\d*关"
         ],
         "roi": [
             1014,

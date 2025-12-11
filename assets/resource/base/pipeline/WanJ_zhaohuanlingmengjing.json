@@ -177,7 +177,9 @@
         "recognition": "TemplateMatch",
         "template": [
             "wanjian/zhl/zhaohuanling_kaishi1.png",
-            "wanjian/zhl/zhaohuanling_kaishi2.png"
+            "wanjian/zhl/zhaohuanling_kaishi2.png",
+            "wanjian/zhl/zhaohuanling_kaishi3.png",
+            "wanjian/zhl/zhaohuanling_kaishi4.png"
         ],
         "roi": [
             313,

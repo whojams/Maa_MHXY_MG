@@ -181,6 +181,7 @@
             40,
             53
         ],
+        "pre_delay": 1000,
         "action": "Click",
         "post_delay": 3000,
         "next": [
