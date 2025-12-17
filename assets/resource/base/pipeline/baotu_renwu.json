@@ -186,9 +186,26 @@
     "baotu_renwu_sleep": {
         "pre_delay": 700000,
         "next": [
+            "[JumpBack]shimenwancheng-九转天阶遮挡",
             "[JumpBack]师门完成-九幽遮挡",
+            "[JumpBack]战斗平衡弹窗-点击关闭",
             "open_huodong_bt"
         ]
+    },
+    "战斗平衡弹窗-点击关闭": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zonghe/zhandoupingheng_guanbi1.png"
+        ],
+        "roi": [
+            1215,
+            4,
+            48,
+            51
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 500
     },
     "open_huodong_bt": {
         "pre_wait_freezes": 1,
