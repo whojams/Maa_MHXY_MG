@@ -133,7 +133,7 @@
             834,
             433
         ],
-        "threshold": 0.9,
+        "threshold": 0.8,
         "next": [
             "活动-趣味鉴赏-开始-点击参加"
         ]
@@ -174,14 +174,15 @@
     "鉴赏第一次": {
         "recognition": "TemplateMatch",
         "template": [
-            "qiandao/kongjian_jianshang.png"
+            "qiandao/kongjian_jianshang.png",
+            "qiandao/kongjian_jianshang3.png"
         ],
         "green_mask": true,
         "roi": [
-            129,
-            109,
-            458,
-            574
+            120,
+            95,
+            468,
+            592
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
@@ -214,14 +215,15 @@
     "鉴赏第二次": {
         "recognition": "TemplateMatch",
         "template": [
-            "qiandao/kongjian_jianshang.png"
+            "qiandao/kongjian_jianshang.png",
+            "qiandao/kongjian_jianshang3.png"
         ],
         "green_mask": true,
         "roi": [
-            129,
-            109,
-            458,
-            574
+            120,
+            95,
+            468,
+            592
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
@@ -254,14 +256,15 @@
     "鉴赏第三次": {
         "recognition": "TemplateMatch",
         "template": [
-            "qiandao/kongjian_jianshang.png"
+            "qiandao/kongjian_jianshang.png",
+            "qiandao/kongjian_jianshang3.png"
         ],
         "green_mask": true,
         "roi": [
-            129,
-            109,
-            458,
-            574
+            120,
+            95,
+            468,
+            592
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
@@ -294,14 +297,15 @@
     "鉴赏第四次": {
         "recognition": "TemplateMatch",
         "template": [
-            "qiandao/kongjian_jianshang.png"
+            "qiandao/kongjian_jianshang.png",
+            "qiandao/kongjian_jianshang3.png"
         ],
         "green_mask": true,
         "roi": [
-            129,
-            109,
-            458,
-            574
+            120,
+            95,
+            468,
+            592
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
@@ -334,14 +338,15 @@
     "鉴赏第五次": {
         "recognition": "TemplateMatch",
         "template": [
-            "qiandao/kongjian_jianshang.png"
+            "qiandao/kongjian_jianshang.png",
+            "qiandao/kongjian_jianshang3.png"
         ],
         "green_mask": true,
         "roi": [
-            129,
-            109,
-            458,
-            574
+            120,
+            95,
+            468,
+            592
         ],
         "threshold": 0.9,
         "pre_delay": 1000,
@@ -376,10 +381,10 @@
             "qiandao/liaotian_guanbi.png"
         ],
         "roi": [
-            593,
-            306,
-            42,
-            86
+            596,
+            294,
+            40,
+            102
         ],
         "action": "Click"
     },
