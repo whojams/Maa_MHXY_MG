@@ -88,6 +88,7 @@
         ]
     },
     "panduan_zhujiemian_ks": {
+        "inverse": true,
         "recognition": "TemplateMatch",
         "template": [
             "zonghe/jiahao.png",
@@ -101,7 +102,6 @@
             78,
             157
         ],
-        "inverse": true,
         "pre_delay": 1000,
         "action": "ClickKey",
         "post_wait_freezes": 100,

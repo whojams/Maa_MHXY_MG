@@ -133,7 +133,7 @@
             834,
             433
         ],
-        "threshold": 0.8,
+        "threshold": 0.9,
         "next": [
             "活动-趣味鉴赏-开始-点击参加"
         ]
@@ -146,6 +146,22 @@
         "roi": "活动-趣味鉴赏-开始",
         "pre_delay": 3000,
         "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "趣味鉴赏-进入界面成功"
+        ]
+    },
+    "趣味鉴赏-进入界面成功": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "qiandao/liaotian_guanbi.png"
+        ],
+        "roi": [
+            596,
+            294,
+            40,
+            102
+        ],
         "next": [
             "趣味鉴赏-刷新"
         ]
