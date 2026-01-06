@@ -110,14 +110,22 @@
     },
     "关闭X9联赛弹窗": {
         "recognition": "TemplateMatch",
-        "template": "zonghe/shouye_huodong_zedang.png",
+        "template": [
+            "zonghe/shouye_huodong_zedang.png",
+            "zonghe/shouye_huodong_zedang2.png"
+        ],
         "roi": [
             1048,
             51,
             66,
             64
         ],
-        "action": "Click"
+        "threshold": [
+            0.9
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000
     },
     "关闭三界热点": {
         "recognition": "OCR",
