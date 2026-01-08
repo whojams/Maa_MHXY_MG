@@ -180,7 +180,6 @@
         "post_delay": 500
     },
     "任务栏切换为任务": {
-        "pre_delay": 1500,
         "recognition": "ColorMatch",
         "upper": [
             177,
@@ -199,6 +198,7 @@
             35
         ],
         "count": 950,
+        "pre_delay": 1500,
         "action": "Click",
         "post_delay": 1500
     },
