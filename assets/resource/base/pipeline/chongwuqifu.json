@@ -160,7 +160,24 @@
         "action": "Click",
         "post_delay": 2000,
         "next": [
-            "点击祈福"
+            "点击祈福",
+            "祈福-已完成"
+        ]
+    },
+    "祈福-已完成": {
+        "recognition": "OCR",
+        "expected": [
+            "祈福[（(]1/1[)）]"
+        ],
+        "roi": [
+            905,
+            165,
+            348,
+            339
+        ],
+        "post_delay": 1000,
+        "next": [
+            "panduan_zhujiemian"
         ]
     },
     "点击祈福": {
