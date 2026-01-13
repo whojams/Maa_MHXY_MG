@@ -1,0 +1,57 @@
+{
+    "bangpaiwanjiandati": {
+        "next": [
+            "帮派答题",
+            "[JumpBack]panduan_zhujiemian"
+        ]
+    },
+    "帮派答题": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zonghe/chenghao.png",
+            "zonghe/jiahao.png"
+        ],
+        "roi": [
+            1206,
+            637,
+            66,
+            57
+        ],
+        "pre_delay": 1000,
+        "next": [
+            "帮派答题-展开聊天窗口"
+        ]
+    },
+    "帮派答题-展开聊天窗口": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "dati/liaotian.png"
+        ],
+        "roi": [
+            0,
+            512,
+            86,
+            93
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 500,
+        "next": [
+            "帮派答题-选择帮派频道"
+        ]
+    },
+    "帮派答题-选择帮派频道": {
+        "recognition": "OCR",
+        "expected": [
+            "帮派"
+        ],
+        "roi": [
+            10,
+            100,
+            107,
+            424
+        ],
+        "pre_delay": 500,
+        "action": "Click"
+    }
+}

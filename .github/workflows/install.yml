@@ -21,6 +21,9 @@ permissions:
   contents: write
   actions: write
 
+env:
+  MAA_FRAMEWORK_VERSION: "v5.3.0"
+  MFAA_VERSION: "v2.5.0"
 jobs:
   meta:
     runs-on: ubuntu-latest
@@ -85,7 +88,8 @@ jobs:
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-win-${{ matrix.arch }}*"
-          latest: true
+          tag: ${{env.MAA_FRAMEWORK_VERSION}}
+          # latest: true
           # preRelease: true
           out-file-path: "deps"
           extract: true
@@ -96,8 +100,8 @@ jobs:
         with:
           repository: SweetSmellFox/MFAAvalonia
           fileName: "MFAAvalonia-*-win-x64*"
-          latest: true
-          # tag: "v2.2.2"
+          # latest: true
+          tag: ${{env.MFAA_VERSION}}
           out-file-path: "MFA"
           extract: true
 
@@ -147,7 +151,8 @@ jobs:
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-linux-${{ matrix.arch }}*"
-          latest: true
+          tag: ${{env.MAA_FRAMEWORK_VERSION}}
+          # latest: true
           # preRelease: true
           out-file-path: "deps"
           extract: true
@@ -158,8 +163,8 @@ jobs:
         with:
           repository: SweetSmellFox/MFAAvalonia
           fileName: "MFAAvalonia-*-linux-${{ matrix.arch == 'x86_64' && 'x64' || 'arm64' }}*"
-          latest: true
-          # tag: "v2.2.2"
+          # latest: true
+          tag: ${{env.MFAA_VERSION}}
           out-file-path: "MFA"
           extract: true
 
@@ -206,7 +211,8 @@ jobs:
         with:
           repository: MaaXYZ/MaaFramework
           fileName: "MAA-macos-${{ matrix.arch }}*"
-          latest: true
+          tag: ${{env.MAA_FRAMEWORK_VERSION}}
+          # latest: true
           out-file-path: "deps"
           extract: true
 
@@ -216,8 +222,8 @@ jobs:
         with:
           repository: SweetSmellFox/MFAAvalonia
           fileName: "MFAAvalonia-*-osx-${{ matrix.arch == 'x86_64' && 'x64' || 'arm64' }}*"
-          latest: true
-          # tag: "v2.2.2"
+          # latest: true
+          tag: ${{env.MFAA_VERSION}}
           out-file-path: "MFA"
           extract: true
 
