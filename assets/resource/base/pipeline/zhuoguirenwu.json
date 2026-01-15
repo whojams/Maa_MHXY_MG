@@ -143,6 +143,9 @@
         ]
     },
     "钟馗-捉鬼任务-循环": {
+        "focus": {
+            "Node.Action.Succeeded": "{name}开始执行,领取抓鬼任务成功，开始本轮抓鬼"
+        },
         "recognition": "OCR",
         "expected": [
             "捉鬼任务"
@@ -153,6 +156,7 @@
             312,
             482
         ],
+        "pre_delay": 500,
         "action": "Click",
         "post_delay": 2000,
         "next": [
@@ -267,6 +271,9 @@
         ]
     },
     "抓鬼一轮完成": {
+        "focus": {
+            "Node.Recognition.Succeeded": "{name} 识别命中，抓鬼一轮完成"
+        },
         "recognition": "OCR",
         "expected": [
             "确定"
@@ -289,24 +296,38 @@
             "捉鬼-队伍人员满员判断"
         ]
     },
+    "12": {},
     "抓鬼一轮完成-再次点击确定": {
-        "recognition": "OCR",
-        "expected": [
-            "确定"
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "zhuagui/zhuaguijiesu3.png"
+                ],
+                "roi": [
+                    654,
+                    370,
+                    180,
+                    96
+                ],
+                "threshold": 0.9
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "确定"
+                ],
+                "roi": [
+                    385,
+                    225,
+                    540,
+                    325
+                ]
+            }
         ],
-        "roi": [
-            385,
-            225,
-            540,
-            325
-        ],
+        "pre_delay": 500,
         "action": "Click",
-        "target_offset": [
-            0,
-            0,
-            -5,
-            -5
-        ],
         "post_delay": 1000
     },
     "抓鬼轮数": {
