@@ -147,17 +147,6 @@
         "pre_delay": 1000
     },
     "MyTask3": {},
-    "zhankairenwulan": {
-        "recognition": "TemplateMatch",
-        "template": "zonghe/rwl_suojin.png",
-        "roi": [
-            1203,
-            109,
-            77,
-            71
-        ],
-        "action": "Click"
-    },
     "战斗中-等待100秒": {
         "recognition": "TemplateMatch",
         "template": [
