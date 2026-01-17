@@ -13,7 +13,7 @@
 因69以下账号操作逻辑的不同，部分功能对69以下小号适配存在问题。
 
 ## 功能介绍
-**20+功能**
+**20+功能**日常、周长<br>
 **[功能列表](./docs/功能列表.md)**
 
 
@@ -26,13 +26,13 @@
 ## 鸣谢
 
 本项目由以下相关库强力驱动！
-- **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** \
+- **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)**<br>
  基于图像识别的自动化黑盒测试框架 
-- **[MaaPracticeBoilerplate](https://github.com/MaaXYZ/MaaPracticeBoilerplate)** \
+- **[MaaPracticeBoilerplate](https://github.com/MaaXYZ/MaaPracticeBoilerplate)**<br>
  本仓库为 MaaFramework 所提供的项目模板，开发者可基于此模板直接创建自己的 MaaXXX 项目。
-- ~~**[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)**~~ \
+- ~~**[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)**~~ <br>
 ~~本项目是一个基于WPF框架开发的用户界面，旨在提供类似于MaaPiCli的功能~~
-- [MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)\
+- **[MFAAvalonia](https://github.com/SweetSmellFox/MFAAvalonia)**<br>
 基于 Avalonia 的 MAAFramework 通用 GUI 项目
 
 <!-- 感谢以下开发者对本项目作出的贡献:
