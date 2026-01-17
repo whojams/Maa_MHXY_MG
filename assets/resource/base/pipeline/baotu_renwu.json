@@ -124,7 +124,9 @@
     "活动-宝图任务-开始": {
         "recognition": "TemplateMatch",
         "template": [
-            "baotu/baotu1.png"
+            "baotu/baotu1.png",
+            "baotu/baotu2.png",
+            "baotu/baotu3.png"
         ],
         "roi": [
             316,
