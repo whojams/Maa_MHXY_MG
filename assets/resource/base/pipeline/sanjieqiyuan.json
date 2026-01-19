@@ -70,20 +70,39 @@
         ],
         "post_delay": 1000
     },
+    "11": {},
     "活动-界面-打开失败-点击活动图片": {
-        "recognition": "TemplateMatch",
-        "template": [
-            "zonghe/huodong1.png",
-            "zonghe/huodong2.png"
-        ],
-        "roi": [
-            316,
-            2,
-            79,
-            78
-        ],
-        "threshold": [
-            0.9
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "zonghe/huodong1.png",
+                    "zonghe/huodong2.png"
+                ],
+                "roi": [
+                    316,
+                    2,
+                    79,
+                    78
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "活动",
+                    "舌动"
+                ],
+                "roi": [
+                    316,
+                    2,
+                    79,
+                    78
+                ]
+            }
         ],
         "pre_delay": 1000,
         "action": "Click",
