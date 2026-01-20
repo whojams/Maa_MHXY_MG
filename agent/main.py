@@ -298,8 +298,8 @@ def agent():
         Toolkit.init_option("./")
 
         socket_id = sys.argv[-1]
-        socket_id = "abc"
-        print(f"socket_id: {socket_id}")
+        # socket_id = "abc"
+        # print(f"socket_id: {socket_id}")
 
         AgentServer.start_up(socket_id)
         logger.info("AgentServer 启动")

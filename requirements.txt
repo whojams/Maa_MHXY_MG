@@ -3,7 +3,7 @@ fuzzywuzzy
 Levenshtein
 loguru
 MaaAgentBinary
-MaaFw==5.4.0
+MaaFw==5.4.2
 numpy
 pillow
 python-Levenshtein
