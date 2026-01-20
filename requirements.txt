@@ -2,7 +2,8 @@ colorama
 fuzzywuzzy
 Levenshtein
 loguru
-MaaFw==5.4.2
+MaaAgentBinary
+MaaFw==5.4.0
 numpy
 pillow
 python-Levenshtein
