@@ -1,5 +1,4 @@
 colorama
-fuzzywuzzy
 Levenshtein
 loguru
 MaaAgentBinary

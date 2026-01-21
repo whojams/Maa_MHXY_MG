@@ -1,14 +1,9 @@
-import os
-import json
-from datetime import datetime
 
 from PIL import Image
 from maa.agent.agent_server import AgentServer
 from maa.custom_recognition  import CustomRecognition
 from maa.context import Context
-from fuzzywuzzy import fuzz, process
 from typing import Dict, List, Tuple
-# from assets.agent.utils.logger import logger
 from utils import logger
 import time
 import re
