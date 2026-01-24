@@ -114,10 +114,14 @@
             -8
         ],
         "next": [
-            "钟馗-捉鬼任务-循环"
+            "钟馗-捉鬼任务-循环",
+            "钟馗-捉鬼任务-已领取捉鬼任务"
         ]
     },
     "钟馗-捉鬼任务-已领取捉鬼任务": {
+        "focus": {
+            "Node.Action.Succeeded": "{name}开始执行,已经领取抓鬼任务。"
+        },
         "recognition": "TemplateMatch",
         "template": [
             "zhuagui/zhuagui_yilingqurenwu1.png",
@@ -128,6 +132,9 @@
             94,
             355,
             441
+        ],
+        "threshold": [
+            0.9
         ],
         "action": "ClickKey",
         "key": [
