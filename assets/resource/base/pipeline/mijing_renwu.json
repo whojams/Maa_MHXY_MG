@@ -307,10 +307,6 @@
         "action": "Click",
         "post_delay": 2000
     },
-    "tuichu_shibeijiemian": {
-        "action": "ClickKey",
-        "key": 111
-    },
     "issub_sleep_mijing": {
         "pre_delay": 2000,
         "post_wait_freezes": 5000
