@@ -155,28 +155,12 @@
         ],
         "post_delay": 1000,
         "next": [
-            "队伍-任务描述-输入520"
+            "队伍-任务描述-用户输入"
         ]
     },
-    "队伍-任务描述-输入520": {
+    "队伍-任务描述-用户输入": {
         "action": "InputText",
-        "input_text": "520",
-        "post_delay": 2000,
-        "next": [
-            "队伍-输入框确定"
-        ]
-    },
-    "队伍-任务描述-输入320": {
-        "action": "InputText",
-        "input_text": "320",
-        "post_delay": 2000,
-        "next": [
-            "队伍-输入框确定"
-        ]
-    },
-    "队伍-任务描述-捉鬼": {
-        "action": "InputText",
-        "input_text": "捉鬼",
+        "input_text": "",
         "post_delay": 2000,
         "next": [
             "队伍-输入框确定"
