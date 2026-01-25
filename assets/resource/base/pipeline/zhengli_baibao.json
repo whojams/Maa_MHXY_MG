@@ -374,6 +374,7 @@
             278
         ],
         "action": "Click",
+        "post_delay": 1000,
         "target_offset": [
             5,
             5,
@@ -409,7 +410,11 @@
             479,
             479
         ],
+        "threshold": [
+            0.9
+        ],
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "秘境材料-收入"
         ]
@@ -425,7 +430,8 @@
             134,
             48
         ],
-        "action": "Click"
+        "action": "Click",
+        "post_delay": 1000
     },
     "点击整理-interrupt一轮": {
         "recognition": "OCR",
