@@ -236,7 +236,8 @@
         ],
         "action": "Click",
         "next": [
-            "mijing_zhandou_queren"
+            "mijing_zhandou_queren",
+            "战斗中-等待5秒"
         ]
     },
     "mijing_zhandou_queren": {
