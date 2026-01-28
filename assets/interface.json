@@ -12,6 +12,11 @@
             "name": "ADB",
             "label": "模拟器",
             "type": "Adb"
+        },
+        {
+            "name": "PlayCover",
+            "label": "PlayCover",
+            "type": "PlayCover"
         }
     ],
     "agent": {
