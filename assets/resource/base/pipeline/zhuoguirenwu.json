@@ -48,7 +48,7 @@
         "post_delay": 1000,
         "next": [
             "传送长安城_捉鬼",
-            "[JumpBack]传动长安城_69副本_判断"
+            "[JumpBack]大地图界面-按键打开失败_点击图标"
         ]
     },
     "传送长安城_捉鬼": {
@@ -63,7 +63,7 @@
         "post_delay": 1000
     },
     "打开小地图-钟馗": {
-        "pre_delay": 200,
+        "pre_delay": 500,
         "action": "ClickKey",
         "key": [
             61
@@ -71,25 +71,8 @@
         "post_delay": 1000,
         "next": [
             "点击钟馗",
-            "[JumpBack]打开小地图-钟馗-判断"
+            "[JumpBack]小地图-按键打开失败-点击小地图图标"
         ]
-    },
-    "打开小地图-钟馗-判断": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "baotu/cac_tab_panduan.png",
-        "roi": [
-            200,
-            2,
-            80,
-            75
-        ],
-        "pre_delay": 200,
-        "action": "ClickKey",
-        "key": [
-            61
-        ],
-        "post_delay": 1000
     },
     "点击钟馗": {
         "recognition": "OCR",
@@ -364,7 +347,7 @@
         ],
         "next": [
             "捉鬼-进入组队界面成功",
-            "[JumpBack]队伍-打开界面-判断"
+            "[JumpBack]队伍界面-按键打开失败-点击队伍图标"
         ]
     },
     "捉鬼-进入组队界面成功": {
