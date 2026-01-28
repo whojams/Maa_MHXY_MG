@@ -228,12 +228,5 @@
         "next": [
             "panduan_zhujiemian"
         ]
-    },
-    "dakaibeibao": {
-        "action": "ClickKey",
-        "key": [
-            57,
-            33
-        ]
     }
 }
