@@ -26,27 +26,37 @@
         "post_delay": 2000,
         "next": [
             "打开人物界面-成功",
-            "[JumpBack]打开人物界面-失败"
+            "[JumpBack]人物界面-按键打开失败-点击图标"
         ]
     },
-    "打开人物界面-失败": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": [
-            "人物属性"
+    "人物界面-按键打开失败-点击图标": {
+        "recognition": "ColorMatch",
+        "upper": [
+            141,
+            93,
+            44
+        ],
+        "lower": [
+            136,
+            88,
+            41
         ],
         "roi": [
-            531,
+            1181,
             3,
-            175,
-            60
+            99,
+            99
         ],
-        "pre_delay": 1000,
-        "action": "ClickKey",
-        "key": [
-            57,
-            51
-        ]
+        "count": 500,
+        "pre_delay": 500,
+        "action": "Click",
+        "target": [
+            1185,
+            5,
+            91,
+            92
+        ],
+        "post_delay": 1000
     },
     "打开人物界面-成功": {
         "recognition": "OCR",
