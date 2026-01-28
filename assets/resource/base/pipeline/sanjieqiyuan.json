@@ -44,33 +44,6 @@
             "活动-三界奇缘-点击日常活动"
         ]
     },
-    "活动-界面-打开失败": {
-        "pre_delay": 1000,
-        "action": "ClickKey",
-        "key": [
-            57,
-            31
-        ],
-        "post_wait_freezes": 100
-    },
-    "活动-界面-打开失败2": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "zonghe/huodong_jiemian_panduan.png",
-        "roi": [
-            350,
-            23,
-            600,
-            62
-        ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            31
-        ],
-        "post_delay": 1000
-    },
-    "11": {},
     "活动-界面-打开失败-点击活动图片": {
         "recognition": "Or",
         "any_of": [
