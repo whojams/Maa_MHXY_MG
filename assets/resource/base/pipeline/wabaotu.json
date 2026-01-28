@@ -36,7 +36,7 @@
         "post_delay": 500
     },
     "wabaotu": {
-        "pre_wait_freezes": 1,
+        "pre_delay": 500,
         "action": "ClickKey",
         "key": [
             57,
@@ -44,11 +44,47 @@
         ],
         "post_delay": 1000,
         "next": [
-            "wabaotu_dakaibeibao_chenggong",
-            "[JumpBack]wabaotu_dakaibeibao_shibai"
+            "挖宝图-打开背包-成功",
+            "[JumpBack]背包界面-按键打开失败-点击图标"
         ]
     },
-    "wabaotu_dakaibeibao_chenggong": {
+    "背包界面-按键打开失败-点击图标": {
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "zonghe/baoguo.png",
+                    "zonghe/baoguo_man.png"
+                ],
+                "roi": [
+                    1185,
+                    529,
+                    95,
+                    110
+                ],
+                "threshold": [
+                    0.9
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "包裹"
+                ],
+                "roi": [
+                    1211,
+                    591,
+                    58,
+                    38
+                ]
+            }
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "挖宝图-打开背包-成功": {
         "recognition": "TemplateMatch",
         "template": "beibao/beibao_jiemian_panduan.png",
         "roi": [
@@ -60,23 +96,6 @@
         "next": [
             "挖宝图-打开背包-向上滑动到顶端"
         ]
-    },
-    "wabaotu_dakaibeibao_shibai": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "beibao/beibao_jiemian_panduan.png",
-        "roi": [
-            335,
-            5,
-            577,
-            68
-        ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            33
-        ],
-        "post_delay": 1000
     },
     "挖宝图-打开背包-向上滑动到顶端": {
         "pre_delay": 1000,
@@ -211,7 +230,7 @@
         "post_delay": 1000,
         "next": [
             "挖宝图完成判断-打开背包成功",
-            "[JumpBack]挖宝图完成判断-打开背包失败"
+            "[JumpBack]背包界面-按键打开失败-点击图标"
         ]
     },
     "挖宝图完成判断-打开背包成功": {
@@ -228,23 +247,6 @@
             "挖宝图完成",
             "[JumpBack]背包向上滑动1"
         ]
-    },
-    "挖宝图完成判断-打开背包失败": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": "beibao/beibao_jiemian_panduan.png",
-        "roi": [
-            335,
-            5,
-            577,
-            68
-        ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            33
-        ],
-        "post_delay": 1000
     },
     "挖宝图完成": {
         "recognition": "TemplateMatch",
