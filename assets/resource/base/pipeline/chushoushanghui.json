@@ -23,31 +23,64 @@
             57,
             29
         ],
+        "post_delay": 1000,
         "next": [
-            "点击商会",
-            "[JumpBack]打开摆摊-判断"
+            "打开摆摊成功",
+            "[JumpBack]摆摊界面-按键打开失败-点击摆摊图标"
         ]
     },
-    "打开摆摊-判断": {
-        "inverse": true,
-        "recognition": "OCR",
-        "expected": [
-            "摆摊",
-            "商城",
-            "充值",
-            "商会"
+    "摆摊界面-按键打开失败-点击摆摊图标": {
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "shangcheng/shangcheng.png"
+                ],
+                "threshold": [
+                    0.9
+                ],
+                "roi": [
+                    2,
+                    175,
+                    86,
+                    89
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "商城"
+                ],
+                "roi": [
+                    2,
+                    175,
+                    86,
+                    89
+                ]
+            }
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "打开摆摊成功": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "shangcheng/baitan_zhujiemian.png",
+            "shangcheng/baitan_zhujiemian2.png"
         ],
         "roi": [
-            491,
-            10,
-            263,
-            57
+            435,
+            0,
+            382,
+            119
         ],
-        "pre_delay": 200,
-        "action": "ClickKey",
-        "key": [
-            57,
-            29
+        "threshold": [
+            0.9
+        ],
+        "next": [
+            "点击商会"
         ]
     },
     "点击商会": {
