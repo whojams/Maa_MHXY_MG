@@ -37,6 +37,10 @@
             "path": [
                 "./resource/base",
                 "./resource/NeteaseServer"
+            ],
+            "controller": [
+                "ADB",
+                "PlayCover"
             ]
         },
         {
@@ -44,6 +48,10 @@
             "path": [
                 "./resource/base",
                 "./resource/9game"
+            ],
+            "controller": [
+                "ADB",
+                "PlayCover"
             ]
         }
     ],
@@ -198,12 +206,12 @@
             "description": "需要用户手动组队后，在开始运行任务"
         },
         {
-            "name": "召唤灵海底（公测）",
+            "name": "召唤灵海底",
             "entry": "haidi",
             "description": "需要用户手动组队后，在开始运行任务"
         },
         {
-            "name": "九黎演武（公测）",
+            "name": "九黎演武",
             "entry": "jiuliyanwu"
         }
     ],
