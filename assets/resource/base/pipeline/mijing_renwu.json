@@ -47,27 +47,25 @@
         ],
         "post_delay": 2000,
         "next": [
-            "chuansong_donghaiwan",
-            "[JumpBack]dakai_map_panduan"
+            "打开大地图成功_传送东海湾_秘境任务",
+            "[JumpBack]大地图界面-按键打开失败_点击图标"
         ]
     },
-    "dakai_map_panduan": {
-        "pre_delay": 1500,
-        "inverse": true,
+    "打开大地图成功_传送东海湾_秘境任务": {
         "recognition": "TemplateMatch",
-        "template": "zonghe/ditu_jiemian_panduan.png",
+        "template": [
+            "zonghe/ditu_jiemian_panduan.png",
+            "zonghe/ditu_jiemian_panduan2.png"
+        ],
         "roi": [
             111,
             32,
             83,
             79
         ],
-        "action": "ClickKey",
-        "key": [
-            57,
-            41
-        ],
-        "post_delay": 1000
+        "next": [
+            "chuansong_donghaiwan"
+        ]
     },
     "chuansong_donghaiwan": {
         "pre_delay": 2000,
@@ -88,13 +86,11 @@
         ],
         "post_delay": 1500,
         "next": [
-            "click_map_yunleyou",
-            "[JumpBack]click_tab_mijing_panduan"
+            "东海湾小地图打开成功",
+            "[JumpBack]小地图-按键打开失败-点击小地图图标"
         ]
     },
-    "click_tab_mijing_panduan": {
-        "inverse": true,
-        "pre_delay": 500,
+    "东海湾小地图打开成功": {
         "recognition": "TemplateMatch",
         "template": "mijing/donghaiwan_tab_panduan.png",
         "roi": [
@@ -103,11 +99,9 @@
             60,
             64
         ],
-        "action": "ClickKey",
-        "key": [
-            61
-        ],
-        "post_delay": 1000
+        "next": [
+            "click_map_yunleyou"
+        ]
     },
     "click_map_yunleyou": {
         "recognition": "OCR",
