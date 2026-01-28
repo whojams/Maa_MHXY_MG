@@ -154,8 +154,6 @@
         ]
     },
     "click_baotu_ttwf": {
-        "pre_delay": 4000,
-        "pre_wait_freezes": 4000,
         "recognition": "OCR",
         "expected": [
             "听听无妨"
@@ -166,6 +164,7 @@
             311,
             363
         ],
+        "pre_delay": 4000,
         "action": "Click",
         "next": [
             "baotu_huadong_down",

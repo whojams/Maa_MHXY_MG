@@ -136,7 +136,9 @@
         ],
         "pre_delay": 1000,
         "action": "ClickKey",
-        "key": 111
+        "key": [
+            4
+        ]
     },
     "师门完成-九幽遮挡": {
         "recognition": "TemplateMatch",

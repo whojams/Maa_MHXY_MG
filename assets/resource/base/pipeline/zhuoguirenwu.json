@@ -121,7 +121,7 @@
         ],
         "action": "ClickKey",
         "key": [
-            111
+            4
         ],
         "post_delay": 2000,
         "next": [

@@ -361,7 +361,7 @@
         "pre_delay": 1000,
         "action": "ClickKey",
         "key": [
-            111
+            4
         ],
         "post_delay": 1000
     },
