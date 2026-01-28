@@ -93,10 +93,30 @@
         ],
         "post_delay": 1500,
         "next": [
-            "祈福-开始移动"
+            "祈福-打开小地图成功-开始移动",
+            "[JumpBack]小地图-按键打开失败-点击小地图图标"
         ]
     },
-    "祈福-开始移动": {
+    "小地图-按键打开失败-点击小地图图标": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "zonghe/xiaoditu_taiyang.png",
+            "zonghe/xiaoditu_yueliang.png"
+        ],
+        "roi": [
+            58,
+            1,
+            75,
+            79
+        ],
+        "threshold": [
+            0.9
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000
+    },
+    "祈福-打开小地图成功-开始移动": {
         "recognition": "TemplateMatch",
         "template": [
             "qifu/qifu_tab.png"
