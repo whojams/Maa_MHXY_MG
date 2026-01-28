@@ -1,26 +1,33 @@
 {
     "zhengli_baibao": {
         "next": [
-            "打开背包成功",
-            "[JumpBack]zhengli_baibao_panduan"
+            "整理背包-过渡",
+            "[JumpBack]panduan_zhujiemian"
         ]
     },
-    "zhengli_baibao_panduan": {
-        "inverse": true,
+    "整理背包-过渡": {
         "recognition": "TemplateMatch",
-        "template": "beibao/beibao_jiemian_panduan.png",
-        "roi": [
-            335,
-            5,
-            577,
-            68
+        "template": [
+            "zonghe/chenghao.png",
+            "zonghe/jiahao.png"
         ],
+        "roi": [
+            1206,
+            637,
+            66,
+            57
+        ],
+        "pre_delay": 2000,
         "action": "ClickKey",
         "key": [
             57,
             33
         ],
-        "post_delay": 1000
+        "post_delay": 1000,
+        "next": [
+            "打开背包成功",
+            "[JumpBack]背包界面-按键打开失败-点击图标"
+        ]
     },
     "打开背包成功": {
         "recognition": "TemplateMatch",
