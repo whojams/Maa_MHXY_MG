@@ -17,7 +17,7 @@
             66,
             57
         ],
-        "pre_delay": 200,
+        "pre_delay": 500,
         "action": "ClickKey",
         "post_delay": 2000,
         "key": [
@@ -26,33 +26,44 @@
         ],
         "next": [
             "队伍-进入主界面",
-            "[JumpBack]队伍-打开界面-判断"
+            "[JumpBack]队伍界面-按键打开失败-点击队伍图标"
         ]
     },
-    "队伍-打开界面-判断": {
-        "inverse": true,
-        "recognition": "TemplateMatch",
-        "template": [
-            "duiwu/duiwu-zhujiemian.png"
-        ],
-        "roi": [
-            375,
-            5,
-            506,
-            65
+    "队伍界面-按键打开失败-点击队伍图标": {
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "duiwu/duiwu.png"
+                ],
+                "roi": [
+                    1161,
+                    104,
+                    119,
+                    65
+                ]
+            },
+            {
+                "recognition": "OCR",
+                "expected": "队伍",
+                "roi": [
+                    1161,
+                    104,
+                    119,
+                    65
+                ]
+            }
         ],
         "pre_delay": 1000,
-        "action": "ClickKey",
-        "key": [
-            57,
-            48
-        ],
+        "action": "Click",
         "post_delay": 1000
     },
     "队伍-进入主界面": {
         "recognition": "TemplateMatch",
         "template": [
-            "duiwu/duiwu-zhujiemian.png"
+            "duiwu/duiwu-jiemian.png",
+            "duiwu/duiwu-jiemian2.png"
         ],
         "roi": [
             375,
