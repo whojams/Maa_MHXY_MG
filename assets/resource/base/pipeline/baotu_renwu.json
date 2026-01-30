@@ -181,6 +181,7 @@
     },
     "baotu_huadong_down": {
         "action": "Swipe",
+        "max_hit": 3,
         "begin": [
             1145,
             234,
