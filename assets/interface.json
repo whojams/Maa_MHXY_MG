@@ -33,8 +33,7 @@
                 "./resource/base"
             ],
             "controller": [
-                "ADB",
-                "PlayCover"
+                "ADB"
             ]
         },
         {
@@ -44,8 +43,7 @@
                 "./resource/NeteaseServer"
             ],
             "controller": [
-                "ADB",
-                "PlayCover"
+                "ADB"
             ]
         },
         {
@@ -55,9 +53,19 @@
                 "./resource/9game"
             ],
             "controller": [
-                "ADB",
-                "PlayCover"
+                "ADB"
             ]
+        },
+        {
+            "name": "playcover资源",
+            "path": [
+                "./resource/base",
+                "./resource/mac"
+            ],
+            "controller": [
+                "PlayCover"
+            ],
+            "description": "适用于Mac使用PlayCover的用户"
         }
     ],
     "task": [
