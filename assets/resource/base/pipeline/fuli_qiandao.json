@@ -33,11 +33,13 @@
             79
         ],
         "action": "Click",
+        "post_delay": 1000,
         "next": [
             "qiandaohuadong"
         ]
     },
     "qiandaohuadong": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             633,
@@ -57,6 +59,7 @@
         ]
     },
     "qiandaohuadong2": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             615,
@@ -76,6 +79,7 @@
         ]
     },
     "qiandaohuadong3": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             629,
@@ -95,6 +99,7 @@
         ]
     },
     "qiandaohuadong4": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             606,
@@ -114,6 +119,7 @@
         ]
     },
     "qiandaohuadong5": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             617,
@@ -133,6 +139,7 @@
         ]
     },
     "qiandaohuadong6": {
+        "max_hit": 2,
         "action": "Swipe",
         "begin": [
             597,
@@ -166,6 +173,7 @@
         ]
     },
     "click_fuli_leiji1_lingqu": {
+        "max_hit": 2,
         "action": "Click",
         "target": [
             800,
@@ -192,6 +200,7 @@
         ]
     },
     "click_fuli_leiji2_lingqu": {
+        "max_hit": 2,
         "action": "Click",
         "target": [
             915,
@@ -218,6 +227,7 @@
         ]
     },
     "click_fuli_leiji3_lingqu": {
+        "max_hit": 2,
         "action": "Click",
         "target": [
             1031,
