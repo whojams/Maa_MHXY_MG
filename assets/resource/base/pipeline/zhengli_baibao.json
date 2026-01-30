@@ -25,11 +25,11 @@
         ],
         "post_delay": 1000,
         "next": [
-            "打开背包成功",
+            "打开背包成功-向上滑动到顶端",
             "[JumpBack]背包界面-按键打开失败-点击图标"
         ]
     },
-    "打开背包成功": {
+    "打开背包成功-向上滑动到顶端": {
         "recognition": "TemplateMatch",
         "template": "beibao/beibao_jiemian_panduan.png",
         "roi": [
@@ -38,11 +38,6 @@
             577,
             68
         ],
-        "next": [
-            "背包向上滑动到顶端"
-        ]
-    },
-    "背包向上滑动到顶端": {
         "action": "MultiSwipe",
         "swipes": [
             {

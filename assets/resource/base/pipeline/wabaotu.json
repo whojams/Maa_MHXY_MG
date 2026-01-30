@@ -44,7 +44,7 @@
         ],
         "post_delay": 1000,
         "next": [
-            "挖宝图-打开背包-成功",
+            "挖宝图-打开背包-成功-并向上滑动到顶端",
             "[JumpBack]背包界面-按键打开失败-点击图标"
         ]
     },
@@ -84,7 +84,7 @@
         "action": "Click",
         "post_delay": 1000
     },
-    "挖宝图-打开背包-成功": {
+    "挖宝图-打开背包-成功-并向上滑动到顶端": {
         "recognition": "TemplateMatch",
         "template": "beibao/beibao_jiemian_panduan.png",
         "roi": [
@@ -93,11 +93,6 @@
             577,
             68
         ],
-        "next": [
-            "挖宝图-打开背包-向上滑动到顶端"
-        ]
-    },
-    "挖宝图-打开背包-向上滑动到顶端": {
         "pre_delay": 1000,
         "action": "MultiSwipe",
         "post_delay": 1000,
