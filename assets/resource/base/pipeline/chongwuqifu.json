@@ -273,9 +273,9 @@
             579,
             415
         ],
-        "pre_delay": 500,
+        "pre_delay": 1000,
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1000,
         "next": [
             "识别到对号点击确定"
         ]
