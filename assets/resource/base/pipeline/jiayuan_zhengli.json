@@ -229,20 +229,12 @@
             77
         ],
         "next": [
-            "召唤灵喂养三次-agent"
+            "[JumpBack]召唤灵点击喂养-3次",
+            "卧室-点击打理-过渡"
         ]
     },
-    "召唤灵喂养三次-agent": {
-        "action": "Custom",
-        "custom_action": "count",
-        "custom_action_param": {
-            "count": 0,
-            "target_count": 3,
-            "nextTask": "卧室-点击打理-过渡",
-            "LoopNode": "召唤灵点击喂养"
-        }
-    },
-    "召唤灵点击喂养": {
+    "召唤灵点击喂养-3次": {
+        "max_hit": 3,
         "recognition": "OCR",
         "expected": [
             "喂养"
@@ -320,6 +312,7 @@
             51,
             138
         ],
+        "pre_delay": 1000,
         "action": "Click",
         "post_delay": 500,
         "next": [
@@ -400,20 +393,12 @@
             60
         ],
         "next": [
-            "卧室休息-agent"
+            "[JumpBack]卧室-点击休息-4次",
+            "休息已完成-回到主界面"
         ]
     },
-    "卧室休息-agent": {
-        "action": "Custom",
-        "custom_action": "count",
-        "custom_action_param": {
-            "count": 0,
-            "target_count": 4,
-            "nextTask": "休息已完成-回到主界面",
-            "LoopNode": "卧室-点击休息"
-        }
-    },
-    "卧室-点击休息": {
+    "卧室-点击休息-4次": {
+        "max_hit": 4,
         "recognition": "OCR",
         "expected": "休息",
         "roi": [
