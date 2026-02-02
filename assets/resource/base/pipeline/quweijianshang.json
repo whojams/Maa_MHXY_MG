@@ -134,6 +134,7 @@
             433
         ],
         "threshold": 0.9,
+        "green_mask": true,
         "next": [
             "活动-趣味鉴赏-开始-点击参加"
         ]
