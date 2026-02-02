@@ -22,8 +22,8 @@ permissions:
   actions: write
 
 env:
-  MAA_FRAMEWORK_VERSION: "v5.4.2"
-  MFAA_VERSION: "v2.5.6"
+  MAA_FRAMEWORK_VERSION: "v5.4.0"
+  MFAA_VERSION: "v2.6.1"
 jobs:
   meta:
     runs-on: ubuntu-latest
