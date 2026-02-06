@@ -1,6 +1,7 @@
 {
     "baotu_renwu": {
         "next": [
+            "已领取宝图任务",
             "主界面-宝图任务",
             "[JumpBack]panduan_zhujiemian"
         ]
@@ -198,6 +199,29 @@
             "kaishi_datu"
         ]
     },
+    "已领取宝图任务": {
+        "recognition": "OCR",
+        "expected": [
+            "宝图任务"
+        ],
+        "roi": [
+            1034,
+            171,
+            235,
+            336
+        ],
+        "pre_delay": 500,
+        "action": "Click",
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]师门完成-九转天阶遮挡",
+            "[JumpBack]师门完成-九幽遮挡",
+            "[JumpBack]战斗平衡弹窗-点击关闭",
+            "[JumpBack]战斗中-等待5秒",
+            "宝图完成判断",
+            "[JumpBack]宝图-间隔30秒-最大10分钟"
+        ]
+    },
     "kaishi_datu": {
         "recognition": "OCR",
         "expected": [
@@ -211,8 +235,17 @@
         ],
         "action": "Click",
         "next": [
-            "baotu_renwu_sleep"
+            "[JumpBack]师门完成-九转天阶遮挡",
+            "[JumpBack]师门完成-九幽遮挡",
+            "[JumpBack]战斗平衡弹窗-点击关闭",
+            "[JumpBack]战斗中-等待5秒",
+            "宝图完成判断",
+            "[JumpBack]宝图-间隔30秒-最大10分钟"
         ]
+    },
+    "宝图-间隔30秒-最大10分钟": {
+        "max_hit": 20,
+        "pre_delay": 30000
     },
     "baotu_renwu_sleep": {
         "pre_delay": 700000,
@@ -223,6 +256,56 @@
             "panduan_zhujiemian"
         ]
     },
+    "宝图完成判断": {
+        "inverse": true,
+        "recognition": "Or",
+        "any_of": [
+            {
+                "recognition": "OCR",
+                "expected": [
+                    "宝图任务"
+                ],
+                "roi": [
+                    1034,
+                    171,
+                    235,
+                    336
+                ]
+            },
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "zhandou/zidong.png",
+                    "zhandou/quxiao.png"
+                ],
+                "roi": [
+                    1175,
+                    549,
+                    103,
+                    159
+                ]
+            },
+            {
+                "recognition": "TemplateMatch",
+                "template": [
+                    "zonghe/zidongxunlu1.png",
+                    "zonghe/zidongxunlu2.png",
+                    "zonghe/zidongxunlu3.png",
+                    "zonghe/zidongxunlu4.png"
+                ],
+                "roi": [
+                    257,
+                    133,
+                    770,
+                    461
+                ]
+            }
+        ],
+        "next": [
+            "panduan_zhujiemian"
+        ]
+    },
+    "52": {},
     "战斗平衡弹窗-点击关闭": {
         "recognition": "TemplateMatch",
         "template": [

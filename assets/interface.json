@@ -122,10 +122,7 @@
         {
             "name": "宝图任务",
             "entry": "baotu_renwu",
-            "option": [
-                "选择宝图时间"
-            ],
-            "description": "请选择宝图任务打宝图时间，程序将等待时间结束后检查任务是否完成"
+            "description": "打宝图任务"
         },
         {
             "name": "挖宝图",
@@ -368,27 +365,6 @@
                                 "[JumpBack]活动-三界奇缘-开始答题_agent",
                                 "[JumpBack]panduan_zhujiemian"
                             ]
-                        }
-                    }
-                }
-            ]
-        },
-        "选择宝图时间": {
-            "type": "select",
-            "cases": [
-                {
-                    "name": "69级(11分钟)",
-                    "pipeline_override": {
-                        "baotu_renwu_sleep": {
-                            "pre_delay": 700000
-                        }
-                    }
-                },
-                {
-                    "name": "25级小号(21分钟)",
-                    "pipeline_override": {
-                        "baotu_renwu_sleep": {
-                            "pre_delay": 1260000
                         }
                     }
                 }
