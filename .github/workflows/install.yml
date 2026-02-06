@@ -23,7 +23,7 @@ permissions:
 
 env:
   MAA_FRAMEWORK_VERSION: "v5.4.2"
-  MFAA_VERSION: "v2.6.2"
+  MFAA_VERSION: "v2.6.5-beta.1"
 jobs:
   meta:
     runs-on: ubuntu-latest
@@ -119,7 +119,7 @@ jobs:
       - name: Install
         shell: bash
         run: |
-          ./install/python/python.exe ./tools/install.py ${{ needs.meta.outputs.tag }}
+          ./install/python/python.exe ./tools/install.py ${{ needs.meta.outputs.tag }} win-x64
           if [ -d "MFA" ]; then
             echo "Copying MFA files to install directory..."
             mkdir -p install
@@ -180,7 +180,7 @@ jobs:
         run: |
           PYTHON_EXECUTABLE="python"
           echo "Using Python executable: $PYTHON_EXECUTABLE for Linux"
-          $PYTHON_EXECUTABLE ./tools/install.py ${{ needs.meta.outputs.tag }}
+          $PYTHON_EXECUTABLE ./tools/install.py ${{ needs.meta.outputs.tag }} linux-${{ matrix.arch == 'x86_64' && 'x64' || 'arm64' }}
           if [ -d "MFA" ]; then
             echo "Copying MFA files to install directory on Linux..."
             mkdir -p install
@@ -251,7 +251,7 @@ jobs:
         run: |
           PYTHON_EXECUTABLE="./install/python/bin/python3"
           echo "Using Python executable: $PYTHON_EXECUTABLE for macOS"
-          $PYTHON_EXECUTABLE ./tools/install.py ${{ needs.meta.outputs.tag }}
+          $PYTHON_EXECUTABLE ./tools/install.py ${{ needs.meta.outputs.tag }} osx-${{ matrix.arch == 'x86_64' && 'x64' || 'arm64' }}
 
           if [ -d "MFA" ]; then
             echo "Copying MFA files to install directory on macOS..."

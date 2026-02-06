@@ -118,7 +118,7 @@ def install_agent():
 
 
 if __name__ == "__main__":
-    install_deps()
+    install_deps(platform_tag)
     install_resource()
     install_chores()
     install_agent()
