@@ -37,17 +37,17 @@
         ]
     },
     "shimen_renwu2_dianji": {
-        "pre_delay": 500,
         "recognition": "OCR",
         "expected": [
             "师门任务"
         ],
         "roi": [
-            1036,
-            113,
-            240,
-            150
+            1035,
+            112,
+            245,
+            294
         ],
+        "pre_delay": 500,
         "action": "Click",
         "next": [
             "师门-点击去完成",
@@ -62,10 +62,10 @@
         ],
         "threshold": 0.9,
         "roi": [
-            1036,
-            113,
-            240,
-            150
+            1035,
+            112,
+            245,
+            294
         ],
         "action": "Click",
         "next": [

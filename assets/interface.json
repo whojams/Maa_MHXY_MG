@@ -16,7 +16,8 @@
         {
             "name": "PlayCover",
             "label": "PlayCover",
-            "type": "PlayCover"
+            "type": "PlayCover",
+            "description": "部分任务存在兼容问题，不建议使用"
         }
     ],
     "agent": {
