@@ -23,7 +23,7 @@ permissions:
 
 env:
   MAA_FRAMEWORK_VERSION: "v5.4.2"
-  MFAA_VERSION: "v2.6.5-beta.1"
+  MFAA_VERSION: "v2.6.7"
 jobs:
   meta:
     runs-on: ubuntu-latest
