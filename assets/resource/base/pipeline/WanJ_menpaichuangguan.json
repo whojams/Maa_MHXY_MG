@@ -141,7 +141,8 @@
         "recognition": "TemplateMatch",
         "template": [
             "wanjian/mp/menpaizhengba_weikaishi.png",
-            "wanjian/mp/menpaizhengba_weikaishi2.png"
+            "wanjian/mp/menpaizhengba_weikaishi2.png",
+            "wanjian/mp/menpaizhengba_weikaishi3.png"
         ],
         "roi": [
             313,
