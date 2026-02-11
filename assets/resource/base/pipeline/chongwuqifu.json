@@ -44,7 +44,7 @@
         ],
         "pre_delay": 500,
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": [
             "点击祈福庭院"
         ]
@@ -62,7 +62,7 @@
         ],
         "pre_delay": 500,
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 1500,
         "next": [
             "已经在-祈福庭院"
         ]
@@ -81,6 +81,7 @@
             121,
             34
         ],
+        "post_delay": 2000,
         "next": [
             "识别祈福神树",
             "[JumpBack]移动到神树附近"
@@ -214,7 +215,7 @@
             339
         ],
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1000,
         "next": [
             "进入选择召唤零界面"
         ]
@@ -224,6 +225,7 @@
         "expected": [
             "选择召唤灵"
         ],
+        "post_delay": 1500,
         "next": [
             "默认选择第一个",
             "[JumpBack]祈福-选择宠物-向上滑动"
@@ -239,7 +241,8 @@
         "end": [
             645,
             328
-        ]
+        ],
+        "post_delay": 1000
     },
     "默认选择第一个": {
         "recognition": "TemplateMatch",
@@ -255,9 +258,9 @@
         "threshold": [
             0.9
         ],
-        "pre_delay": 500,
+        "pre_delay": 1000,
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": [
             "识别到对号点击确定"
         ]
